@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #03152e;
+    color: white;
+  }
+  
+  main {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .divAltura, .divPeso, .divCalc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .divAltura .inputs,
+  .divPeso .inputs {
+      margin-bottom: 10px; /* Ajuste a margem conforme necessário */
+  }
+  
+  input, button {
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #6f00ff;
+    color: white;
+  }
+.logo {
+    width: 400px;
+}
+.icone {
+    width: 15px;
+    color: aliceblue;
+}
+.resultado {
+    margin-top: 20px;
+    font-size: 24px;
+}
+@media (max-width: 500px) {
+    body, input, button {
+      font-size: 15px;
+    }
+  }
